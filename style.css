@@ -1,0 +1,29 @@
+/*
+Theme Name: Twenty Fifteen Child Portal
+Theme URI:          https://ngo-portal.org
+Description:        A WordPress child theme to Twenty-fifteen built for the NGO-portal NGO-sites.
+Author:             George Bredberg
+Author Email:       info@datagaraget.se
+Author URI:         https://datagaraget.se
+Version:            1.0
+Template:     twentyfifteen
+License:            License GPLv3
+License URI:        http://www.gnu.org/licenses/gpl-3.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentyfifteen-child-portal
+Domain Path: 				/languages/
+GitHub Theme URI: https://github.com/NGO-portal/twenty-fifteen-child-portal
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+.sitelist li {
+list-style:none;
+margin:0;
+padding:.2em;
+display: inline-block;
+}
+
+a.sitelist:link {
+	border: 0 !important;
+	
+}
