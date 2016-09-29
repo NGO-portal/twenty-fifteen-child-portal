@@ -15,6 +15,7 @@ header("X-New-Header: test");
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
@@ -56,3 +57,16 @@ header("X-New-Header: test");
 	<div id="content" class="site-content">
 	<!-- Show ads from group 1 -->
 	<?php if( function_exists( 'adrotate_group' ) ) { echo adrotate_group(1); } ?>
+	<!-- NGO-portal navigation icons -->
+	<?php
+	$sitelist = ngob_get_sitelist_slug();
+	?>
+	<li class="top-navigation"><a href=<?php bloginfo('url'); ?>/wp-admin/>
+		<i class="fa fa-edit" aria-hidden="true" title="<?php _e("Login","beyond-expectations-child-ngo");?>"></i>
+		<span class="screen-reader-text"><?php _e("Login", "beyond-expectations-child-ngo");?></span>
+	</a></li>
+	<li class="top-navigation"><a href=<?php bloginfo('url'); ?>/<?php if( !empty( $sitelist ) ) { echo $sitelist; } ?>>
+		<i class="fa fa-external-link" aria-hidden="true" title="<?php _e('NGO-list','beyond-expectations-child-ngo');?>"></i>
+		<span class="screen-reader-text"><?php _e("NGO-list", "beyond-expectations-child-ngo");?>:</span>
+	</a></li>
+	<!-- End navigation icons-->
