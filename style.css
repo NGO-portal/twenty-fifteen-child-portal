@@ -5,7 +5,7 @@ Description:        A WordPress child theme to Twenty-fifteen built for the NGO-
 Author:             George Bredberg
 Author Email:       info@datagaraget.se
 Author URI:         https://datagaraget.se
-Version:            1.1
+Version:            1.1.1
 Template:     twentyfifteen
 License:            License GPLv3
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
@@ -16,7 +16,7 @@ GitHub Theme URI: https://github.com/NGO-portal/twenty-fifteen-child-portal
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
+/* For the sitelist page and links in headers*/
 .sitelist li {
 list-style:none;
 margin:0;
@@ -24,6 +24,7 @@ padding:.2em;
 /*display: inline-block;*/
 }
 
+/* For sitelist page*/
 a.sitelist:link {
 	border: 0 !important;
 }
